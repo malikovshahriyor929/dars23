@@ -1,0 +1,45 @@
+.footer > div {
+  display: flex;
+  padding: 50px;
+  gap: 90px;
+}
+.fot {
+  display: flex;
+  gap: 90px;
+}
+.fot > div {
+  display: flex;
+  gap: 60px;
+}
+.foot {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.foot h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #000;
+}
+.foot p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+}
+@media (max-width:856px) {
+.fot > div{
+    flex-direction: column;
+}    
+}
+@media (max-width:700px){
+    .footer > div{
+        flex-direction: column;
+    }
+}
+@media (max-width:536px){
+    .fot{
+        flex-direction: column;
+    }
+}

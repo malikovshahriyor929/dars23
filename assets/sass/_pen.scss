@@ -1,0 +1,171 @@
+.pens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas:
+    " pen1 pen2 pen3"
+    "pen1 pen4 pen5";
+  //   grid-template-columns: repeat(2, 455px);
+  gap: 30px;
+  margin-top: 200px;
+}
+.pen {
+  // background-color: red;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.05);
+  padding: 0 30px;
+
+  background: #fdfdfd;
+}
+.pen1 {
+  grid-area: pen1;
+  height: 455px;
+}
+.pen2 {
+  grid-area: pen2;
+  width: 386px;
+  height: 209px;
+}
+.pen3 {
+  grid-area: pen3;
+  width: 386px;
+  height: 209px;
+}
+.pen4 {
+  grid-area: pen4;
+  width: 386px;
+  height: 209px;
+}
+.pen5 {
+  grid-area: pen5;
+  width: 386px;
+  height: 209px;
+}
+.no1 h1 {
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 1.4;
+  color: #63bfbe;
+}
+.inputs_pen input {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 25px 0;
+  padding: 0 10px;
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.05);
+  background: #fff;
+  width: 338px;
+  height: 48px;
+  border: none;
+  outline: none;
+}
+.no1 button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 335px;
+  height: 57px;
+  box-shadow: 0 6px 14px 0 rgba(88, 76, 42, 0.2);
+  background: var(--color-main);
+  border: none;
+  color: var(--color-white);
+}
+.check_faq {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  align-items: flex-start;
+  user-select: none;
+}
+.check_faq p span {
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: var(--color-main);
+}
+.info2 h1 {
+  font-weight: 300;
+  font-size: 72px;
+  line-height: 1.4;
+  color: #63bfbe;
+  margin-bottom: 10px;
+}
+.info2 p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  color: #000;
+}
+@media (max-width: 1256px) {
+  .pens {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "pen1 pen2"
+      "pen1 pen3"
+      "pen4 pen5";
+  }
+}
+@media(max-width:1165px){
+
+    .penc{
+        margin-top: 700px;
+    }
+}
+@media (max-width: 814px) {
+  .pens {
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "pen1"
+      "pen2"
+      "pen3"
+      "pen4"
+      "pen5";
+  }
+  .no1_txt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .inputs_pen {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .no1 button {
+    width: 95%;
+  }
+}
+@media(max-width:639px){
+    .penc{
+        margin-top: 200px;
+    }
+}
+@media(max-width:613px){
+    .penc{
+        margin-top: -200px;
+    }
+}
+@media (max-width: 406px) {
+  .inputs_pen {
+    flex-direction: column;
+    gap: 0;
+    
+  }
+.inputs_pen input{
+    width: 280px;
+}
+  .no1_txt {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+  }
+  .pen {
+    padding: 0 0;
+  }
+  .pen2,
+  .pen3,
+  .pen4,
+  .pen5 {
+    width: 282px;
+    height: 229px;
+  }
+}
